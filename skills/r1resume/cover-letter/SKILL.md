@@ -1,6 +1,6 @@
 ---
 name: r1resume-cover-letter
-description: Use when the user wants to write or generate a cover letter in the R1Resume builder — e.g. "write a cover letter", "generate a cover letter for this job", "draft a cover letter". The agent acts as the LLM that the Go API's `/ai/cover-letter` endpoint would otherwise call: it reads the matched resume and job description via WebMCP, writes the cover letter itself, and writes it back via `set_cover_letter`.
+description: "Use when the user wants to write or generate a cover letter in the R1Resume builder — e.g. \"write a cover letter\", \"generate a cover letter for this job\", \"draft a cover letter\". The agent acts as the LLM that the Go API's `/ai/cover-letter` endpoint would otherwise call: it reads the matched resume and job description via WebMCP, writes the cover letter itself, and writes it back via `set_cover_letter`."
 ---
 
 # R1Resume — Step 4: Generate Cover Letter
@@ -19,7 +19,7 @@ See `r1resume-navigate`. Confirm `chrome-devtools_list_webmcp_tools` shows `get_
 
 1. **Read the resume.**
    - `get_matched_resume`. If it returns empty/null, fall back to `get_original_resume`.
-   - If both are empty, the user must run extract (and optionally match) first — see `r1resume-extract-resume` and `r1resume-match-resume`. Stop and tell them.
+   - If both are empty, the user must run extract (and optionally match) first — see `r1resume-import-resume` and `r1resume-match-resume`. Stop and tell them.
 
 2. **Ensure a job description exists.**
    - `get_job_description`.

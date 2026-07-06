@@ -1,6 +1,6 @@
 ---
 name: r1resume-navigate
-description: Use when the user wants to navigate the R1Resume builder workflow, move between steps, or fill resume/job-description/cover-letter forms in the running RNA web app. Triggers on phrases like "navigate resume builder", "go to step", "fill resume form", "set job description", "move to match step". Also the umbrella skill that documents the full WebMCP tool inventory and delegates the AI-replacement steps (extract / match / cover-letter) to their dedicated skills.
+description: "Use when the user wants to navigate the R1Resume builder workflow, move between steps, or fill resume/job-description/cover-letter forms in the running RNA web app. Triggers on phrases like \"navigate resume builder\", \"go to step\", \"fill resume form\", \"set job description\", \"move to match step\". Also the umbrella skill that documents the full WebMCP tool inventory and delegates the AI-replacement steps (extract / match / cover-letter) to their dedicated skills."
 ---
 
 # R1Resume Builder Navigation & Form-Filling
@@ -94,7 +94,7 @@ Three steps (0, 2, 4) call the Go API's `/ai/*` endpoints in the regular app flo
 
 | Step | Skill                        | SKILL.md                                                       |
 | ---- | ---------------------------- | ------------------------------------------------------------- |
-| 0    | `r1resume-extract-resume`    | `.opencode/skills/r1resume-extract-resume/SKILL.md`           |
+| 0    | `r1resume-import-resume`     | `.opencode/skills/r1resume-import-resume/SKILL.md`            |
 | 2    | `r1resume-match-resume`      | `.opencode/skills/r1resume-match-resume/SKILL.md`             |
 | 4    | `r1resume-cover-letter`      | `.opencode/skills/r1resume-cover-letter/SKILL.md`             |
 

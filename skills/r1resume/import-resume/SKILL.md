@@ -1,6 +1,6 @@
 ---
-name: r1resume-extract-resume
-description: Use when the user wants to import or extract a resume in the R1Resume builder — e.g. "import my resume", "extract this resume file", "parse my PDF resume into the builder". The agent acts as the LLM that the Go API's `/ai/extract-resume` endpoint would otherwise call: it reads raw text via WebMCP tools and writes structured Resume JSON back into the app.
+name: r1resume-import-resume
+description: "Use when the user wants to import or extract a resume in the R1Resume builder — e.g. \"import my resume\", \"extract this resume file\", \"parse my PDF resume into the builder\". The agent acts as the LLM that the Go API's `/ai/extract-resume` endpoint would otherwise call: it reads raw text via WebMCP tools and writes structured Resume JSON back into the app."
 ---
 
 # R1Resume — Step 0: Extract Resume

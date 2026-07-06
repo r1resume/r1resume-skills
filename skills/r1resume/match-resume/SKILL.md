@@ -1,6 +1,6 @@
 ---
 name: r1resume-match-resume
-description: Use when the user wants to tailor or match their resume to a job description in the R1Resume builder — e.g. "match my resume to this job", "tailor my resume for this posting", "optimize my resume for ATS". The agent acts as the LLM that the Go API's `/ai/match-resume` endpoint would otherwise call: it reads the original resume and job description via WebMCP, rewrites the resume itself, and writes the matched result back via `set_matched_resume`.
+description: "Use when the user wants to tailor or match their resume to a job description in the R1Resume builder — e.g. \"match my resume to this job\", \"tailor my resume for this posting\", \"optimize my resume for ATS\". The agent acts as the LLM that the Go API's `/ai/match-resume` endpoint would otherwise call: it reads the original resume and job description via WebMCP, rewrites the resume itself, and writes the matched result back via `set_matched_resume`."
 ---
 
 # R1Resume — Step 2: Match Resume to Job Description
@@ -25,7 +25,7 @@ See `r1resume-navigate`. Confirm `chrome-devtools_list_webmcp_tools` shows `get_
    - If still empty, stop and tell the user a job description is required.
 
 2. **Read the original resume.**
-   - `get_original_resume`. If it returns empty/null, the user must run the extract step first (see `r1resume-extract-resume`). Stop and tell them.
+   - `get_original_resume`. If it returns empty/null, the user must run the extract step first (see `r1resume-import-resume`). Stop and tell them.
 
 3. **Rewrite the resume.** Apply this system prompt verbatim to yourself, using the original resume and the job description as input:
 
